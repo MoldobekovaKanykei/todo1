@@ -1,21 +1,26 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title> Todo </title>
-    <link rel="stylesheet" href="./styles/index.css" /> 
-    <link rel="stylesheet" href="./styles/checkbox.css"> 
+    <!--<link rel="stylesheet" href="./styles/index.css" /> -->
+    <link rel="stylesheet" href="{% static 'styles/index.css' %}" /> 
+   <!-- <link rel="stylesheet" href="./styles/checkbox.css"> -->
+    <link rel="stylesheet" href="{% static 'styles/checkbox.css' %}"> 
 </head>
 <body>
     <section>
 
         <div class="create_container">
             <input 
-            class="create_input" 
-            type = "text" placeholder="Напиши сюда новую задачу"
-            placeholder="Напиши сюда новую задачу" 
+             class="create_input" 
+             type = "text" 
+             placeholder="Напиши сюда новую задачу"
             />
+
             <button class="create_button">Добавить</button>
         </div>
         
