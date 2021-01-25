@@ -34,10 +34,10 @@
             <div class="todo_item_footer">
               <p>{{ todo.created_at}}</p>
               <div class="action_buttons">
-                  <img src="https://image.flaticon.com/icons/png/512/61/61848.png" />
-                  <img src="https://img.icons8.com/ios/452/star--v1.png" />
+                  <img src="{% static 'https://image.flaticon.com/icons/png/512/61/61848.png' %}"  />
+                  <a href="{% url 'delete' todo.id %}"><img src="{% static  'https://img.icons8.com/ios/452/star--v1.png' %}" /></a>
               </div>
-            </div>
+            </div> 
           </div>
           {% endfor %}
         </div>   
