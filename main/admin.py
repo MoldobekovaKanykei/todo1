@@ -1,5 +1,7 @@
 from django.contrib import admin
+from .models import ToDo
 
-# Register your models here.
-def homepage(request):
-    return Httpresponse("Hello, world")
+
+admin.site.register(ToDo)
+
+
